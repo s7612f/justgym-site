@@ -1,5 +1,7 @@
 # JustGym Website
 
+**Live site:** https://s7612f.github.io/justgym-site/
+
 Premium gym website — static HTML/CSS/JS. No build step required.
 
 ## Pages
