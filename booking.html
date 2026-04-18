@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Class — JustGym</title>
+  <meta name="description" content="Book a gym session or class at JustGym. Pick a date, choose your class, confirm your spot." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">JUST<span>GYM</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="booking.html" class="active">Book</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="signup.html" class="btn btn-outline">Log In</a>
+      <a href="signup.html" class="btn btn-primary">Join Now</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-tag">Booking</span>
+      <h2>BOOK A <span>SESSION</span></h2>
+      <p class="section-intro" style="margin-bottom:0;">Select a date, pick your class, and confirm your spot. It takes under 60 seconds.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container" style="max-width:900px;">
+
+      <!-- Progress steps -->
+      <div class="steps" id="bookingSteps">
+        <div class="step active" id="step1">
+          <div class="step-num">1</div>
+          <div class="step-label">Date</div>
+        </div>
+        <div class="step-line" id="line1"></div>
+        <div class="step" id="step2">
+          <div class="step-num">2</div>
+          <div class="step-label">Class</div>
+        </div>
+        <div class="step-line" id="line2"></div>
+        <div class="step" id="step3">
+          <div class="step-num">3</div>
+          <div class="step-label">Details</div>
+        </div>
+        <div class="step-line" id="line3"></div>
+        <div class="step" id="step4">
+          <div class="step-num">4</div>
+          <div class="step-label">Confirm</div>
+        </div>
+      </div>
+
+      <!-- Alert -->
+      <div class="alert alert-success" id="bookingSuccess">
+        🎉 Booking confirmed! Check your email for details. See you on the gym floor.
+      </div>
+
+      <!-- STEP 1: Calendar -->
+      <div id="panelStep1">
+        <h3 style="font-family:var(--font-head); font-size:1.5rem; margin-bottom:1.5rem;">SELECT A DATE</h3>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+          <button class="btn btn-outline" id="prevMonth" style="padding:0.5rem 1rem;">‹ Prev</button>
+          <span id="calMonthLabel" style="font-family:var(--font-head); font-size:1.2rem; letter-spacing:0.05em;"></span>
+          <button class="btn btn-outline" id="nextMonth" style="padding:0.5rem 1rem;">Next ›</button>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid">
+          <div class="cal-header">Mon</div>
+          <div class="cal-header">Tue</div>
+          <div class="cal-header">Wed</div>
+          <div class="cal-header">Thu</div>
+          <div class="cal-header">Fri</div>
+          <div class="cal-header">Sat</div>
+          <div class="cal-header">Sun</div>
+        </div>
+
+        <div style="margin-top:2rem; display:flex; justify-content:flex-end;">
+          <button class="btn btn-primary btn-lg" id="toStep2" disabled>Next: Choose Class →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: Class selection -->
+      <div id="panelStep2" style="display:none;">
+        <h3 style="font-family:var(--font-head); font-size:1.5rem; margin-bottom:0.5rem;">CHOOSE YOUR CLASS</h3>
+        <p style="color:var(--grey); font-size:0.9rem; margin-bottom:1.5rem;">Available classes for <strong id="selectedDateLabel" style="color:var(--white);"></strong></p>
+
+        <div id="classListBooking"></div>
+
+        <div style="margin-top:2rem; display:flex; justify-content:space-between;">
+          <button class="btn btn-outline" id="backToStep1">← Back</button>
+          <button class="btn btn-primary btn-lg" id="toStep3" disabled>Next: Your Details →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Details form -->
+      <div id="panelStep3" style="display:none;">
+        <h3 style="font-family:var(--font-head); font-size:1.5rem; margin-bottom:1.5rem;">YOUR DETAILS</h3>
+
+        <form id="bookingDetailsForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bFirstName">First Name</label>
+              <input type="text" id="bFirstName" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="bLastName">Last Name</label>
+              <input type="text" id="bLastName" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bEmail">Email Address</label>
+            <input type="email" id="bEmail" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="bPhone">Phone (optional)</label>
+            <input type="tel" id="bPhone" placeholder="+44 7700 900000" />
+          </div>
+          <div class="form-group">
+            <label for="bMember">Membership Status</label>
+            <select id="bMember">
+              <option value="member">Existing Member</option>
+              <option value="trial">On Free Trial</option>
+              <option value="guest">Guest (drop-in)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bNotes">Notes for the coach (optional)</label>
+            <textarea id="bNotes" placeholder="Any injuries, fitness level, or questions…"></textarea>
+          </div>
+        </form>
+
+        <div style="margin-top:2rem; display:flex; justify-content:space-between;">
+          <button class="btn btn-outline" id="backToStep2">← Back</button>
+          <button class="btn btn-primary btn-lg" id="toStep4">Review Booking →</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: Confirm -->
+      <div id="panelStep4" style="display:none;">
+        <h3 style="font-family:var(--font-head); font-size:1.5rem; margin-bottom:1.5rem;">CONFIRM BOOKING</h3>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="gold-bar"></div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; font-size:0.9rem;">
+            <div>
+              <div style="color:var(--grey); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Date</div>
+              <div id="confirmDate" style="font-weight:600;"></div>
+            </div>
+            <div>
+              <div style="color:var(--grey); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Class</div>
+              <div id="confirmClass" style="font-weight:600;"></div>
+            </div>
+            <div>
+              <div style="color:var(--grey); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Time</div>
+              <div id="confirmTime" style="font-weight:600;"></div>
+            </div>
+            <div>
+              <div style="color:var(--grey); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Coach</div>
+              <div id="confirmCoach" style="font-weight:600;"></div>
+            </div>
+            <div>
+              <div style="color:var(--grey); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Name</div>
+              <div id="confirmName" style="font-weight:600;"></div>
+            </div>
+            <div>
+              <div style="color:var(--grey); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Email</div>
+              <div id="confirmEmail" style="font-weight:600;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="confirmTerms" />
+          <label for="confirmTerms">I confirm I'm fit to participate and agree to JustGym's <a href="#">terms of participation</a>. Bookings cancelled less than 2 hours before class forfeit the slot.</label>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; margin-top:1rem;">
+          <button class="btn btn-outline" id="backToStep3">← Back</button>
+          <button class="btn btn-primary btn-lg" id="confirmBooking">Confirm Booking ✓</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">JUST<span>GYM</span></div>
+        <p class="footer-tagline">Premium fitness for everyone. Train smarter, live better.</p>
+        <div class="footer-social"><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">📸</a></div>
+      </div>
+      <div class="footer-col"><h4>Train</h4><ul class="footer-links"><li><a href="classes.html">Classes</a></li><li><a href="booking.html">Book</a></li><li><a href="membership.html">Membership</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Info</h4><ul class="footer-links"><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 JustGym Ltd. All rights reserved.</p>
+      <p>123 High Street · London · EC1A 1BB · 020 7946 0000</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

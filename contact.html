@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — JustGym</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">JUST<span>GYM</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="signup.html" class="btn btn-outline">Log In</a>
+      <a href="signup.html" class="btn btn-primary">Join Now</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-tag">Get In Touch</span>
+      <h2>WE'RE HERE <span>TO HELP</span></h2>
+      <p class="section-intro" style="margin-bottom:0;">Questions about membership, classes or anything else — we typically reply within 2 hours during opening hours.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="grid-2" style="gap:4rem; align-items:start;">
+
+        <!-- Form -->
+        <div>
+          <span class="section-tag">Send a Message</span>
+          <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">DROP US <span>A LINE</span></h2>
+
+          <div class="alert alert-success" id="contactSuccess">
+            Message received! We'll get back to you within 2 hours.
+          </div>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cFirstName">First Name</label>
+                <input type="text" id="cFirstName" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="cLastName">Last Name</label>
+                <input type="text" id="cLastName" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email</label>
+              <input type="email" id="cEmail" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject</label>
+              <select id="cSubject">
+                <option value="">Select a topic…</option>
+                <option>Membership enquiry</option>
+                <option>Class booking help</option>
+                <option>Personal training</option>
+                <option>Corporate / group accounts</option>
+                <option>Feedback or complaint</option>
+                <option>Press &amp; partnerships</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" rows="6" placeholder="How can we help?" required></textarea>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="cPrivacy" required />
+              <label for="cPrivacy">I agree to JustGym's <a href="#">Privacy Policy</a>. We'll only use your details to respond to this message.</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%; text-align:center;">Send Message →</button>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <span class="section-tag">Find Us</span>
+          <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">GYM <span>INFO</span></h2>
+
+          <div class="card" style="margin-bottom:1.5rem;">
+            <h3 style="margin-bottom:0.75rem;">📍 Address</h3>
+            <p>JustGym London<br />123 High Street<br />London, EC1A 1BB<br />United Kingdom</p>
+          </div>
+
+          <div class="card" style="margin-bottom:1.5rem;">
+            <h3 style="margin-bottom:0.75rem;">📞 Phone & Email</h3>
+            <p><a href="tel:02079460000">020 7946 0000</a><br /><a href="mailto:hello@justgym.co.uk">hello@justgym.co.uk</a></p>
+          </div>
+
+          <div class="card" style="margin-bottom:1.5rem;">
+            <h3 style="margin-bottom:0.75rem;">🕐 Opening Hours</h3>
+            <div style="font-size:0.9rem; line-height:2;">
+              <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--border); padding-bottom:0.25rem; margin-bottom:0.25rem;"><span>Monday – Friday</span><span style="color:var(--gold);">06:00 – 22:00</span></div>
+              <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--border); padding-bottom:0.25rem; margin-bottom:0.25rem;"><span>Saturday</span><span style="color:var(--gold);">07:00 – 20:00</span></div>
+              <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--border); padding-bottom:0.25rem; margin-bottom:0.25rem;"><span>Sunday</span><span style="color:var(--gold);">08:00 – 18:00</span></div>
+              <div style="display:flex; justify-content:space-between;"><span>24/7 Keycard (Elite &amp; Pro)</span><span style="color:var(--gold);">Always</span></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-bottom:0.75rem;">🚇 Getting Here</h3>
+            <p style="font-size:0.9rem; color:var(--grey); line-height:1.7;">Nearest tube: <strong style="color:var(--white);">Farringdon</strong> (2 min walk) or <strong style="color:var(--white);">Barbican</strong> (5 min walk). Cycle parking available at the rear entrance.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">JUST<span>GYM</span></div>
+        <p class="footer-tagline">Premium fitness for everyone. Train smarter, live better.</p>
+        <div class="footer-social"><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">📸</a></div>
+      </div>
+      <div class="footer-col"><h4>Train</h4><ul class="footer-links"><li><a href="classes.html">Classes</a></li><li><a href="booking.html">Book</a></li><li><a href="membership.html">Membership</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Info</h4><ul class="footer-links"><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 JustGym Ltd. All rights reserved.</p>
+      <p>123 High Street · London · EC1A 1BB · 020 7946 0000</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

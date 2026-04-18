@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership — JustGym</title>
+  <meta name="description" content="JustGym membership plans. Simple, honest pricing. No hidden fees. Cancel anytime." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">JUST<span>GYM</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="membership.html" class="active">Membership</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="signup.html" class="btn btn-outline">Log In</a>
+      <a href="signup.html" class="btn btn-primary">Join Now</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-tag">Pricing</span>
+      <h2>SIMPLE <span>PLANS</span></h2>
+      <p class="section-intro" style="margin-bottom:0;">No joining fees. No annual lock-in. Cancel any time — no questions asked.</p>
+    </div>
+  </div>
+
+  <!-- PLANS -->
+  <section>
+    <div class="container">
+      <div class="grid-3">
+
+        <div class="plan">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><sup>£</sup>29</div>
+          <div class="plan-period">per month · billed monthly</div>
+          <ul class="plan-features">
+            <li>Full gym floor access</li>
+            <li>5 group classes per month</li>
+            <li>Locker &amp; changing rooms</li>
+            <li>Members app (workout tracking)</li>
+            <li>Standard opening hours (06:00–22:00)</li>
+          </ul>
+          <a href="signup.html?plan=starter" class="btn btn-outline" style="width:100%;text-align:center;display:block;">Start Free Trial</a>
+        </div>
+
+        <div class="plan featured">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Elite</div>
+          <div class="plan-price"><sup>£</sup>49</div>
+          <div class="plan-period">per month · billed monthly</div>
+          <ul class="plan-features">
+            <li>Full gym floor access</li>
+            <li>Unlimited group classes</li>
+            <li>24/7 keycard access</li>
+            <li>Sauna &amp; steam room</li>
+            <li>1 personal training session / month</li>
+            <li>Nutrition consultation (1× / quarter)</li>
+            <li>Members app (full features)</li>
+            <li>Complimentary towels</li>
+          </ul>
+          <a href="signup.html?plan=elite" class="btn btn-primary" style="width:100%;text-align:center;display:block;">Start Free Trial</a>
+        </div>
+
+        <div class="plan">
+          <div class="plan-name">Pro</div>
+          <div class="plan-price"><sup>£</sup>79</div>
+          <div class="plan-period">per month · billed monthly</div>
+          <ul class="plan-features">
+            <li>Everything in Elite</li>
+            <li>4 personal training sessions / month</li>
+            <li>Monthly body composition scan</li>
+            <li>Priority class booking (48hr early)</li>
+            <li>Guest passes (2 per month)</li>
+            <li>Personalised workout programme</li>
+            <li>Monthly progress review with coach</li>
+          </ul>
+          <a href="signup.html?plan=pro" class="btn btn-outline" style="width:100%;text-align:center;display:block;">Start Free Trial</a>
+        </div>
+
+      </div>
+
+      <!-- Annual option -->
+      <div class="card" style="margin-top:2.5rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+        <div>
+          <h3 style="margin-bottom:0.5rem;">💰 Pay Annually — Save 20%</h3>
+          <p style="margin-bottom:0;">Switch to an annual plan and get 2 months free. All plans available annually.</p>
+        </div>
+        <a href="signup.html" class="btn btn-primary">See Annual Pricing</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="dark-section">
+    <div class="container">
+      <span class="section-tag">Compare</span>
+      <h2>FULL <span>BREAKDOWN</span></h2>
+
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+          <thead>
+            <tr>
+              <th style="text-align:left; padding:1rem; border-bottom:1px solid var(--border); color:var(--grey); font-weight:500; text-transform:uppercase; letter-spacing:0.1em; font-size:0.75rem;">Feature</th>
+              <th style="padding:1rem; border-bottom:1px solid var(--border); color:var(--gold); font-family:var(--font-head); font-size:1.1rem; letter-spacing:0.05em;">Starter</th>
+              <th style="padding:1rem; border-bottom:1px solid var(--border); color:var(--gold); font-family:var(--font-head); font-size:1.1rem; letter-spacing:0.05em;">Elite</th>
+              <th style="padding:1rem; border-bottom:1px solid var(--border); color:var(--gold); font-family:var(--font-head); font-size:1.1rem; letter-spacing:0.05em;">Pro</th>
+            </tr>
+          </thead>
+          <tbody id="comparisonTable">
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Gym floor access</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Group classes</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">5 / month</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--gold);">Unlimited</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--gold);">Unlimited</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">24/7 access</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Sauna &amp; steam room</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Personal training sessions</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">1 / month</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--gold);">4 / month</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Nutrition consultation</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">1× / quarter</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">Monthly</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Body composition scan</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">Monthly</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Priority booking</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">48hr early access</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Guest passes</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">2 / month</td></tr>
+            <tr><td style="padding:1rem;border-bottom:1px solid var(--border);">Complimentary towels</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;color:var(--grey);">—</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td><td style="text-align:center;border-bottom:1px solid var(--border);padding:1rem;">✓</td></tr>
+            <tr><td style="padding:1rem;">Members app</td><td style="text-align:center;padding:1rem;">Basic</td><td style="text-align:center;padding:1rem;">Full</td><td style="text-align:center;padding:1rem;">Full + coaching</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container" style="max-width:760px;">
+      <span class="section-tag">FAQ</span>
+      <h2>COMMON <span>QUESTIONS</span></h2>
+
+      <div class="card" style="margin-bottom:1rem;">
+        <h3 style="margin-bottom:0.5rem; font-size:1rem; font-family:var(--font-body); font-weight:600;">Is there a joining fee?</h3>
+        <p>No joining fee, ever. Pay your first month and you're in. That's it.</p>
+      </div>
+      <div class="card" style="margin-bottom:1rem;">
+        <h3 style="margin-bottom:0.5rem; font-size:1rem; font-family:var(--font-body); font-weight:600;">Can I cancel anytime?</h3>
+        <p>Yes. Cancel online or at reception with 30 days' notice. No questions, no penalties.</p>
+      </div>
+      <div class="card" style="margin-bottom:1rem;">
+        <h3 style="margin-bottom:0.5rem; font-size:1rem; font-family:var(--font-body); font-weight:600;">What's included in the free trial?</h3>
+        <p>7 full days of access to everything in your chosen plan — no card required to start. You'll only be billed after the trial if you choose to continue.</p>
+      </div>
+      <div class="card" style="margin-bottom:1rem;">
+        <h3 style="margin-bottom:0.5rem; font-size:1rem; font-family:var(--font-body); font-weight:600;">Can I upgrade or downgrade?</h3>
+        <p>Any time. Changes take effect the following billing cycle. Upgrade instantly — downgrade with 30 days' notice.</p>
+      </div>
+      <div class="card" style="margin-bottom:1rem;">
+        <h3 style="margin-bottom:0.5rem; font-size:1rem; font-family:var(--font-body); font-weight:600;">Do you offer student or corporate discounts?</h3>
+        <p>Yes — 15% off for students with a valid ID. Corporate accounts available for teams of 5+. Contact us for details.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:0.5rem; font-size:1rem; font-family:var(--font-body); font-weight:600;">Can I freeze my membership?</h3>
+        <p>Elite and Pro members can freeze for up to 3 months per year with no charge. Useful for holidays or injury recovery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" style="padding:4rem 3rem; text-align:center;">
+    <div class="container">
+      <h2>READY TO <span>JOIN?</span></h2>
+      <p style="color:var(--grey); margin-bottom:2rem;">7-day free trial. No card required.</p>
+      <a href="signup.html" class="btn btn-primary btn-lg">Get Started Today</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">JUST<span>GYM</span></div>
+        <p class="footer-tagline">Premium fitness for everyone. Train smarter, live better.</p>
+        <div class="footer-social"><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">📸</a></div>
+      </div>
+      <div class="footer-col"><h4>Train</h4><ul class="footer-links"><li><a href="classes.html">Classes</a></li><li><a href="booking.html">Book</a></li><li><a href="membership.html">Membership</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Info</h4><ul class="footer-links"><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 JustGym Ltd. All rights reserved.</p>
+      <p>123 High Street · London · EC1A 1BB · 020 7946 0000</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

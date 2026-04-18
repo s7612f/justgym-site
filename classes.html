@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classes — JustGym</title>
+  <meta name="description" content="Browse JustGym's weekly class schedule. HIIT, yoga, spin, strength, pilates and more — book your spot today." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">JUST<span>GYM</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html" class="active">Classes</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="signup.html" class="btn btn-outline">Log In</a>
+      <a href="signup.html" class="btn btn-primary">Join Now</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-tag">Weekly Schedule</span>
+      <h2>OUR <span>CLASSES</span></h2>
+      <p class="section-intro" style="margin-bottom:0;">Over 40 classes a week led by expert coaches. Find your perfect session below.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <!-- Filter tabs -->
+      <div class="tabs" id="dayTabs">
+        <button class="tab-btn active" data-day="monday">Monday</button>
+        <button class="tab-btn" data-day="tuesday">Tuesday</button>
+        <button class="tab-btn" data-day="wednesday">Wednesday</button>
+        <button class="tab-btn" data-day="thursday">Thursday</button>
+        <button class="tab-btn" data-day="friday">Friday</button>
+        <button class="tab-btn" data-day="saturday">Saturday</button>
+        <button class="tab-btn" data-day="sunday">Sunday</button>
+      </div>
+
+      <!-- Monday -->
+      <div class="tab-panel active" id="monday">
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">06:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Morning HIIT Blast</div><div class="class-trainer">Coach Sarah Mitchell · 45 min</div></div>
+          <span class="class-tag tag-hiit">HIIT</span>
+          <div class="class-spots"><div class="spots-num">4</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">09:30<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Vinyasa Flow Yoga</div><div class="class-trainer">Coach Priya Sharma · 60 min</div></div>
+          <span class="class-tag tag-yoga">Yoga</span>
+          <div class="class-spots"><div class="spots-num">8</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">12:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Power Strength Circuit</div><div class="class-trainer">Coach Dan Torres · 50 min</div></div>
+          <span class="class-tag tag-strength">Strength</span>
+          <div class="class-spots"><div class="spots-num">2</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">05:30<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Rhythm Spin</div><div class="class-trainer">Coach James Park · 45 min</div></div>
+          <span class="class-tag tag-spin">Spin</span>
+          <div class="class-spots"><div class="spots-num">12</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">07:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Core &amp; Pilates</div><div class="class-trainer">Coach Leila Hassan · 45 min</div></div>
+          <span class="class-tag tag-pilates">Pilates</span>
+          <div class="class-spots"><div class="spots-num">6</div><div class="spots-label">spots</div></div>
+        </div>
+      </div>
+
+      <!-- Tuesday -->
+      <div class="tab-panel" id="tuesday">
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">07:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Cardio Kickboxing</div><div class="class-trainer">Coach Marcus Webb · 45 min</div></div>
+          <span class="class-tag tag-cardio">Cardio</span>
+          <div class="class-spots"><div class="spots-num">10</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">10:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Stretch &amp; Restore</div><div class="class-trainer">Coach Priya Sharma · 60 min</div></div>
+          <span class="class-tag tag-yoga">Yoga</span>
+          <div class="class-spots"><div class="spots-num">14</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">12:30<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Lunchtime HIIT</div><div class="class-trainer">Coach Sarah Mitchell · 30 min</div></div>
+          <span class="class-tag tag-hiit">HIIT</span>
+          <div class="class-spots"><div class="spots-num">6</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">06:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Olympic Lifting</div><div class="class-trainer">Coach Dan Torres · 60 min</div></div>
+          <span class="class-tag tag-strength">Strength</span>
+          <div class="class-spots"><div class="spots-num">8</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">08:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Evening Spin</div><div class="class-trainer">Coach James Park · 45 min</div></div>
+          <span class="class-tag tag-spin">Spin</span>
+          <div class="class-spots"><div class="spots-num">3</div><div class="spots-label">spots</div></div>
+        </div>
+      </div>
+
+      <!-- Wednesday -->
+      <div class="tab-panel" id="wednesday">
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">06:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Bootcamp</div><div class="class-trainer">Coach Marcus Webb · 60 min</div></div>
+          <span class="class-tag tag-hiit">HIIT</span>
+          <div class="class-spots"><div class="spots-num">5</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">10:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Barre Fusion</div><div class="class-trainer">Coach Leila Hassan · 50 min</div></div>
+          <span class="class-tag tag-pilates">Pilates</span>
+          <div class="class-spots"><div class="spots-num">9</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">05:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Running Club</div><div class="class-trainer">Coach Sarah Mitchell · 60 min</div></div>
+          <span class="class-tag tag-cardio">Cardio</span>
+          <div class="class-spots"><div class="spots-num">15</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">07:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Yin Yoga</div><div class="class-trainer">Coach Priya Sharma · 75 min</div></div>
+          <span class="class-tag tag-yoga">Yoga</span>
+          <div class="class-spots"><div class="spots-num">11</div><div class="spots-label">spots</div></div>
+        </div>
+      </div>
+
+      <!-- Thursday -->
+      <div class="tab-panel" id="thursday">
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">06:30<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Tabata Express</div><div class="class-trainer">Coach Sarah Mitchell · 30 min</div></div>
+          <span class="class-tag tag-hiit">HIIT</span>
+          <div class="class-spots"><div class="spots-num">7</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">09:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Reformer Pilates</div><div class="class-trainer">Coach Leila Hassan · 50 min</div></div>
+          <span class="class-tag tag-pilates">Pilates</span>
+          <div class="class-spots"><div class="spots-num">4</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">12:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Deadlift &amp; Drive</div><div class="class-trainer">Coach Dan Torres · 50 min</div></div>
+          <span class="class-tag tag-strength">Strength</span>
+          <div class="class-spots"><div class="spots-num">6</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">06:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Power Spin</div><div class="class-trainer">Coach James Park · 45 min</div></div>
+          <span class="class-tag tag-spin">Spin</span>
+          <div class="class-spots"><div class="spots-num">0</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">07:30<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Cardio Conditioning</div><div class="class-trainer">Coach Marcus Webb · 45 min</div></div>
+          <span class="class-tag tag-cardio">Cardio</span>
+          <div class="class-spots"><div class="spots-num">10</div><div class="spots-label">spots</div></div>
+        </div>
+      </div>
+
+      <!-- Friday -->
+      <div class="tab-panel" id="friday">
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">06:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Friday HIIT</div><div class="class-trainer">Coach Sarah Mitchell · 45 min</div></div>
+          <span class="class-tag tag-hiit">HIIT</span>
+          <div class="class-spots"><div class="spots-num">5</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">09:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Flow &amp; Strength</div><div class="class-trainer">Coach Priya Sharma · 60 min</div></div>
+          <span class="class-tag tag-yoga">Yoga</span>
+          <div class="class-spots"><div class="spots-num">12</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">12:30<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Lunchtime Spin</div><div class="class-trainer">Coach James Park · 30 min</div></div>
+          <span class="class-tag tag-spin">Spin</span>
+          <div class="class-spots"><div class="spots-num">8</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">05:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Weekend Prep Strength</div><div class="class-trainer">Coach Dan Torres · 60 min</div></div>
+          <span class="class-tag tag-strength">Strength</span>
+          <div class="class-spots"><div class="spots-num">3</div><div class="spots-label">spots</div></div>
+        </div>
+      </div>
+
+      <!-- Saturday -->
+      <div class="tab-panel" id="saturday">
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">08:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Weekend Warriors HIIT</div><div class="class-trainer">Coach Marcus Webb · 60 min</div></div>
+          <span class="class-tag tag-hiit">HIIT</span>
+          <div class="class-spots"><div class="spots-num">2</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">10:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Saturday Spin Social</div><div class="class-trainer">Coach James Park · 45 min</div></div>
+          <span class="class-tag tag-spin">Spin</span>
+          <div class="class-spots"><div class="spots-num">6</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">11:30<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Hatha Yoga</div><div class="class-trainer">Coach Priya Sharma · 75 min</div></div>
+          <span class="class-tag tag-yoga">Yoga</span>
+          <div class="class-spots"><div class="spots-num">10</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">01:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Strength Foundations</div><div class="class-trainer">Coach Dan Torres · 50 min</div></div>
+          <span class="class-tag tag-strength">Strength</span>
+          <div class="class-spots"><div class="spots-num">8</div><div class="spots-label">spots</div></div>
+        </div>
+      </div>
+
+      <!-- Sunday -->
+      <div class="tab-panel" id="sunday">
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">09:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Sunday Reset Yoga</div><div class="class-trainer">Coach Priya Sharma · 90 min</div></div>
+          <span class="class-tag tag-yoga">Yoga</span>
+          <div class="class-spots"><div class="spots-num">14</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">11:00<small>AM</small></div>
+          <div class="class-info"><div class="class-name">Light Cardio &amp; Core</div><div class="class-trainer">Coach Sarah Mitchell · 45 min</div></div>
+          <span class="class-tag tag-cardio">Cardio</span>
+          <div class="class-spots"><div class="spots-num">11</div><div class="spots-label">spots</div></div>
+        </div>
+        <div class="class-card" onclick="location.href='booking.html'">
+          <div class="class-time">01:00<small>PM</small></div>
+          <div class="class-info"><div class="class-name">Recovery Pilates</div><div class="class-trainer">Coach Leila Hassan · 50 min</div></div>
+          <span class="class-tag tag-pilates">Pilates</span>
+          <div class="class-spots"><div class="spots-num">7</div><div class="spots-label">spots</div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLASS TYPES -->
+  <section class="dark-section">
+    <div class="container">
+      <span class="section-tag">Disciplines</span>
+      <h2>FIND YOUR <span>FORMAT</span></h2>
+      <div class="grid-3">
+        <div class="card"><div class="card-icon">⚡</div><h3>HIIT</h3><p>High-intensity interval training designed to torch calories, build endurance, and push your limits in 30–60 minutes.</p></div>
+        <div class="card"><div class="card-icon">🧘</div><h3>Yoga & Pilates</h3><p>Build flexibility, core strength and mental clarity through expert-led flow and reformer sessions.</p></div>
+        <div class="card"><div class="card-icon">🚴</div><h3>Spin</h3><p>High-energy cycling classes with rhythm-driven playlists. Great for cardio, leg strength and burning stress.</p></div>
+        <div class="card"><div class="card-icon">🏋️</div><h3>Strength</h3><p>Coach-led barbell and functional strength sessions for all levels — from foundations to Olympic lifting.</p></div>
+        <div class="card"><div class="card-icon">🥊</div><h3>Cardio Kickboxing</h3><p>Combine martial arts moves with high-intensity cardio for a full-body burn that never feels like work.</p></div>
+        <div class="card"><div class="card-icon">🏃</div><h3>Running Club</h3><p>Group outdoor runs with structured pacing. All speeds welcome. Meet at the gym, run the city.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">JUST<span>GYM</span></div>
+        <p class="footer-tagline">Premium fitness for everyone. Train smarter, live better.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">📸</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Train</h4><ul class="footer-links"><li><a href="classes.html">Classes</a></li><li><a href="booking.html">Book a Session</a></li><li><a href="membership.html">Membership</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Careers</a></li></ul></div>
+      <div class="footer-col"><h4>Info</h4><ul class="footer-links"><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 JustGym Ltd. All rights reserved.</p>
+      <p>123 High Street · London · EC1A 1BB · 020 7946 0000</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
